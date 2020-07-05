@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>COLLEGE</title>
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/jquery.jConveyorTicker.min.css">
+  <link rel="stylesheet" href="../assets/css/slick.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/images/favicon.ico">
+  <link rel="icon" href="../assets/images/favicon.ico">
+
+</head>
+
+<body>
+  <article class="wrap">
+
+    <div class="wrap-header">
+      <div class="logo">
+        <a href="../index.html" title="HOME">HOME</a>
+      </div>
+      <div class="gnb">
+        <ul>
+          <li>
+            <a href="./markup.html">Markup</a>
+          </li>
+          <li>
+            <a href="./design.html">Design</a>
+          </li>
+          <li>
+            <a href="./college.html">College</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap-body college">
+      <div class="random-box">
+        <ul>
+          <li class="_01">
+            <img src="../assets/images/college/peng.jpg" title="펭귄 이미지" data-scroll-speed="1">
+          </li>
+          <li class="_02">
+            <img src="../assets/images/college/peng.jpg" title="펭귄 이미지" data-scroll-speed="5">
+          </li>
+          <li class="_03">
+            <img src="../assets/images/college/peng.jpg" title="펭귄 이미지" data-scroll-speed="6">
+          </li>
+          <li class="_01_01">
+            <img src="../assets/images/college/han-01.jpg" title="양성평등공모전 특선작" data-scroll-speed="1">
+          </li>
+          <li class="_02_01">
+            <img src="../assets/images/college/chuel-02.jpg" title="캘린더 디자인" data-scroll-speed="5">
+          </li>
+          <li class="_03_01">
+            <img src="../assets/images/college/jun-02.jpg" title="kobaco 입선작" data-scroll-speed="6">
+          </li>
+          <li class="_04">
+            <img src="../assets/images/college/peng.jpg" title="펭귄 이미지" data-scroll-speed="4">
+          </li>
+          <li class="_05">
+            <img src="../assets/images/college/peng.jpg" title="펭귄 이미지" data-scroll-speed="2">
+          </li>
+          <li class="_06">
+            <img src="../assets/images/college/peng.jpg" title="펭귄 이미지" data-scroll-speed="8">
+          </li>
+          <li class="_04_01">
+            <img src="../assets/images/college/chuel-01.png" title="람보르기니 포스터" data-scroll-speed="1">
+          </li>
+          <li class="_05_01">
+            <img src="../assets/images/college/han-02.jpg" title="kobaco 파이널" data-scroll-speed="5">
+          </li>
+          <li class="_06_01">
+            <img src="../assets/images/college/jun-01.jpg" title="공익광고 포스터" data-scroll-speed="6">
+          </li>
+          <li class="_07">
+            <img src="../assets/images/college/peng.jpg" title="펭귄 이미지" data-scroll-speed="3">
+          </li>
+          <li class="_08">
+            <img src="../assets/images/college/peng.jpg" title="펭귄 이미지" data-scroll-speed="6">
+          </li>
+          <li class="_09">
+            <img src="../assets/images/college/peng.jpg" title="펭귄 이미지" data-scroll-speed="2">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="left">
+        <p>Copyright © 2020 Juhan, Lee All rights reserved.</p>
+      </div>
+      <p class="right">
+        82+ 01072940839
+      </p>
+    </div>
+
+    <div class="topBtn">
+      <a href="#this" title="TOP">TOP</a>
+    </div>
+
+  </article>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <script src="../assets/js/niceScroll.min.js"></script>
+  <script src="../assets/js/show-more-items-design.js"></script>
+  <!-- <script src="../assets/js/script.js"></script> -->
+  <script>
+    $.fn.moveIt = function() {
+      var $window = $(window);
+      var instances = [];
+
+      $(this).each(function() {
+        instances.push(new moveItItem($(this)));
+      });
+
+      window.onscroll = function() {
+        var scrollTop = $window.scrollTop();
+        instances.forEach(function(inst) {
+          inst.update(scrollTop);
+        });
+      }
+    };
+
+    var moveItItem = function(el) {
+      this.el = $(el);
+      this.speed = parseInt(this.el.attr('data-scroll-speed'));
+    };
+
+    moveItItem.prototype.update = function(scrollTop) {
+      this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+    };
+
+    // Initialization
+    $(function() {
+      $('[data-scroll-speed]').moveIt();
+    });
+
+    /// ScrollTop
+    var btnTop = $('.topBtn a');
+
+    btnTop.on('click', function() {
+      $('html, body').stop().animate({
+        scrollTop: '0'
+      }, 680);
+    })
+
+    $(window).scroll(function() {
+      if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+        btnTop.addClass('on');
+      } else {
+        btnTop.removeClass('on');
+      }
+
+      var scrollValue = $(document).scrollTop();
+
+      if (scrollValue > 50) {
+        btnTop.addClass('active');
+      } else {
+        btnTop.removeClass('active');
+      }
+    });
+
+    /// Header background
+      var heaD = $('.wrap-header');
+
+      $(window).scroll(function() {
+        var scrollValue = $(document).scrollTop();
+        if (scrollValue > 1) {
+          heaD.addClass('active');
+        } else {
+          heaD.removeClass('active');
+        }
+      });
+
+    /// Footer background
+    var fooT = $('.footer');
+
+    $(window).scroll(function() {
+      var scrollValue = $(document).scrollTop();
+      if (scrollValue > 1) {
+        fooT.addClass('active');
+      } else {
+        fooT.removeClass('active');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
