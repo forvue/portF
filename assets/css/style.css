@@ -503,7 +503,7 @@ Body
 ***********************************************************************/
 /* section 01 */
 #section-01 {
-  background-color: red;
+  background-color: yellow;
   background-image: url('../../assets/images/section-01-bg.png');
   background-repeat: no-repeat;
   background-position: bottom center;
