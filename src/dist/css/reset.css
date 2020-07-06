@@ -1,0 +1,98 @@
+@charset "utf-8";
+@font-face{
+	font-family:'Roboto-Medium';
+	src:url(../../fonts/Roboto-Medium.woff2) format('woff2'),
+		url(../../fonts/Roboto-Medium.woff) format('woff'),
+		url(../../fonts/Roboto-Medium.ttf) format('truetype');
+}
+@font-face{
+	font-family:'Roboto-Regular';
+	src:url(../../fonts/Roboto-Regular.woff2) format('woff2'),
+		url(../../fonts/Roboto-Regular.woff) format('woff'),
+		url(../../fonts/Roboto-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family:'CormorantInfant-SemiBold';
+	src:url(../../fonts/CormorantInfant-SemiBold.woff2) format('woff2'),
+		url(../../fonts/CormorantInfant-SemiBold.woff) format('woff'),
+		url(../../fonts/CormorantInfant-SemiBold.ttf) format('truetype');
+}
+@font-face{
+	font-family:'Metropolis-SemiBold';
+	src:url(../../fonts/Metropolis-SemiBold.woff2) format('woff2'),
+		url(../../fonts/Metropolis-SemiBold.woff) format('woff'),
+		url(../../fonts/Metropolis-SemiBold.ttf) format('truetype');
+}
+
+@font-face{
+	font-family:'Metropolis-Bold';
+	src:url(../../fonts/Metropolis-Bold.woff2) format('woff2'),
+		url(../../fonts/Metropolis-Bold.woff) format('woff'),
+		url(../../fonts/Metropolis-Bold.ttf) format('truetype');
+}
+
+@font-face{
+	font-family:'Metropolis-ExtraBold';
+	src:url(../../fonts/Metropolis-ExtraBold.woff2) format('woff2'),
+		url(../../fonts/Metropolis-ExtraBold.woff) format('woff'),
+		url(../../fonts/Metropolis-ExtraBold.ttf) format('truetype');
+}
+
+@font-face{
+	font-family:'Metropolis-Regular';
+	src:url(../../fonts/Metropolis-Regular.woff2) format('woff2'),
+		url(../../fonts/Metropolis-Regular.woff) format('woff'),
+		url(../../fonts/Metropolis-Regular.ttf) format('truetype');
+}
+
+@font-face{
+	font-family:'Metropolis-ExtraLight';
+	src:url(../../fonts/Metropolis-ExtraLight.woff2) format('woff2'),
+		url(../../fonts/Metropolis-ExtraLight.woff) format('woff'),
+		url(../../fonts/Metropolis-ExtraLight.ttf) format('truetype');
+}
+
+@font-face{
+	font-family:'NotoSansKR-Bold';
+	src:url(../../fonts/NotoSansKR-Bold.woff2) format('woff2'),
+		url(../../fonts/NotoSansKR-Bold.woff) format('woff'),
+		url(../../fonts/NotoSansKR-Bold.ttf) format('truetype');
+}
+
+@font-face{
+	font-family:'NotoSansKR-Light';
+	src:url(../../fonts/NotoSansKR-Light.woff2) format('woff2'),
+		url(../../fonts/NotoSansKR-Light.woff) format('woff'),
+		url(../../fonts/NotoSansKR-Light.ttf) format('truetype');
+}
+
+@font-face{
+	font-family:'NotoSansKR-Thin';
+	src:url(../../fonts/NotoSansKR-Thin.woff2) format('woff2'),
+		url(../../fonts/NotoSansKR-Thin.woff) format('woff'),
+		url(../../fonts/NotoSansKR-Thin.ttf) format('truetype');
+}
+
+@font-face{
+	font-family:'NotoSansKR-Regular';
+	src:url(../../fonts/NotoSansKR-Regular.woff2) format('woff2'),
+		url(../../fonts/NotoSansKR-Regular.woff) format('woff'),
+		url(../../fonts/NotoSansKR-Regular.ttf) format('truetype');
+}
+
+
+
+*{margin:0;padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+html{height:100%;}
+body{font:normal 14px/1 'NotoSansKR-Light', sans-serif;color:#000;position:relative;min-height:100%;letter-spacing: -0.25px}
+ol,ul,li{list-style:none;}
+a{cursor:pointer;text-decoration:none;color:#000;outline: none;}
+a:hover, a:active{text-decoration:none;}
+button{cursor:pointer;border:0;background:none;font-family:'NotoSansKR-Light', sans-serif;outline: none}
+table{border-collapse:collapse;border-spacing:0;}
+caption,legend{width:0;height:0;opacity:0;}
+video,img{vertical-align:top;}
+fieldset{border:0;}
+select{font:normal 14px/1 'NotoSansKR-Light', sans-serif;-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0;}
+input{font:normal 14px/1 'NotoSansKR-Light', sans-serif;border:0;background:none;vertical-align:top;}

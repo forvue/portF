@@ -1,0 +1,85 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "page": "2",
+      "pgsize": "5",
+      "category": "event",
+      "id": 2
+    },
+    {
+      "page": "1",
+      "pgsize": "5",
+      "category": "01",
+      "id": 3
+    },
+    {
+      "page": "1",
+      "pgsize": "5",
+      "category": "01",
+      "id": 4
+    },
+    {
+      "page": "1",
+      "pgsize": "5",
+      "category": "01",
+      "id": 5
+    },
+    {
+      "page": "1",
+      "pgsize": "5",
+      "category": "01",
+      "id": 6
+    },
+    {
+      "page": "1",
+      "pgsize": "5",
+      "category": "01",
+      "id": 7
+    },
+    {
+      "page": "1",
+      "pgsize": "5",
+      "category": "01",
+      "id": 8
+    },
+    {
+      "page": "1",
+      "pgsize": "5",
+      "category": "01",
+      "id": 9
+    },
+    {
+      "page": "1",
+      "pgsize": "5",
+      "category": "01",
+      "id": 10
+    },
+    {
+      "page": "1",
+      "pgsize": "5",
+      "category": "01",
+      "id": 11
+    },
+    {
+      "page": "1",
+      "pgsize": "5",
+      "category": "01",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

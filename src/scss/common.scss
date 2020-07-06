@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+@import "../../dist/css/reset.css";
+
+$url-images: '../../images/';
+$primary-color:#000;
+$metro-e:'Metropolis-ExtraBold', sans-serif;
+$metro-bold:'Metropolis-Bold', sans-serif;
+$metro-b:'Metropolis-SemiBold', sans-serif;
+$metro-r:'Metropolis-Regular', sans-serif;
+$metro-l:'Metropolis-ExtraLight',sans-serif;
+$noto-r:'NotoSansKR-Regular', sans-serif;
+$noto-b:'NotoSansKR-Bold', sans-serif;
+$noto-t:'NotoSansKR-Thin', sans-serif;
+$noto-l:'NotoSansKR-Light', sans-serif;
+$noto-m:'NotoSansKR-medium', sans-serif;
+
+$system-bg-color: #000;
+$system-txt-color: #fff;
+
+$rtist-bg-color: #fff;
+$rtist-txt-color: #000;
+
+$magazine-bg-color: #efefef;
+$magazine-txt-color: #000;
+
+$event-bg-color: #efefef;
+$event-txt-color: #d2d2d2;
+
+$gallery-bg-color: #8b8c91;
+$gallery-txt-color: fff(168, 164, 164); 
+
+
+@mixin noteFont($weight:normal,$color:#000) {
+	@if $weight  == bold{
+		font-family:'NotoSansKR-Bold';
+		color:$color;
+	}@else if $weight == normal{
+		font-family:'NotoSansKR-Light';
+		color:$color;
+	}@else if $weight == medium{
+		font-family:'NotoSansKR-Regular';
+		color:$color;
+	}@else if $weight == thin{
+		font-family:'NotoSansKR-Thin';
+		color:$color;
+	}
+}
+
+@mixin MetroFont($weight:normal,$color:#000) {
+    @if $weight  == semibold{
+        font-family:'Metropolis-SemiBold';
+        color:$color;
+    }@else if $weight == bold{
+        font-family:'Metropolis-ExtraBold';
+        color:$color;
+    }@else if $weight == medium{
+        font-family:'Metropolis-Regular';
+        color:$color;
+    }@else if $weight == normal{
+        font-family:'Metropolis-ExtraLight';
+        color:$color;
+    }
+}
+
+@mixin vendorPrefix($property, $value) {
+	@each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+		#{$prefix}#{property}:$value;
+	}
+}
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null){
+	position: $position;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+@mixin obj-size($width, $height){
+	width:$width;
+	height:$height;
+}
+
+@mixin border($color){
+	border:1px solid $color;
+}
+
+@mixin border-color($pos1, $pos2){
+	border-#{$pos1}-color:transparent;
+	border-#{$pos2}-color:transparent;
+}
+
+@mixin btn-more($color,$w, $h){
+	display:inline-block;
+	border:1px solid $color;
+	width:$w;
+	height:$h;
+	font-family:$metro-b;
+	font-size:14px;
+	line-height:$h;
+	text-align:center;
+	color:$color;
+	text-transform: uppercase;
+	transition:all 0.5s ease;
+}
+
+@mixin btn-more-hover($bg,$color){
+	border-color:$bg;
+	background:$bg;
+	color:$color;
+}
+
+
+@mixin h-txt($weight, $size, $color: #fff) {
+	font-family: "Metropolis-#{$weight}", sans-serif;
+	font-size: $size;
+	color: $color;
+}
+
+@mixin transition($prop: all, $duration: 0.5s, $timing: ease) {
+	transition-property: $prop;
+	transition-duration: $duration;
+	transition-timing-function: $timing;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" href="/dist/css/event.css" />
+		<script src="/dist/js/lib/jquery-1.12.4.min.js"></script>
+		<script src="/dist/js/lib/swiper.min.js"></script>
+		<title>캐논 R EVENT</title>
+	</head>
+	<body>
+		<div style="background:white; position:absolute; left:0; top:0; z-index:10000; width:200px; height:200px;">
+			<button onclick="EventList('GET')">데이터GET</button> <br><br>
+			<button onclick="EventList('POST')">데이터POST</button>
+		</div>
+		<div class="wrap">
+			<header class="header"></header>
+			<div class="sub_container">
+				<div class="kv kv_serise">
+					<div class="pc">
+						<img src="/images/event/kv_series.jpg" alt="" />
+					</div>
+					<div class="mo">
+						<img src="/images/event/m_kv_series.jpg" alt="" />
+					</div>
+					<div class="kv_txt">
+						<h2>R EVENT</h2>
+						<p>
+							신제품 출시 소식부터 정품 등록 이벤트까지, 새로운 소식을 바로 전합니다.
+						</p>
+					</div>
+				</div>
+				<div class="content event">
+					<div class="content_inner">
+						<!-- sub 공통 Tab 영역 -->
+						<ul class="tab_menu">
+							<li class="on">
+								<a href="./event.html">EVENT</a>
+							</li>
+							<li><a href="./notice.html">NOTICE</a></li>
+						</ul>
+						<div class="event_con">
+							<ul class="in_tab">
+								<li class="on">
+									<a href="javascript:void(0)">진행중인 이벤트(<span class="event_cnt">9</span>)</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">종료된 이벤트</a>
+								</li>
+							</ul>
+							<div class="in_con">
+								<ul class="ev_list">
+									<li class="type_black">
+										<a href="event_view.html">
+											<p class="img"><img src="/images/event/ev_bn1.jpg" alt=""></p>
+											<div class="article">
+												<h3 class="tit">이벤트</h3>
+												<p class="txt">새로운 시작! 캐논과 <br>	함께! 캐논 2020 구매찬스</p>
+												<p class="date">2020.01.29 – 2020.03.31</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="event_view.html">									
+											<p class="img"><img src="/images/event/ev_bn2.jpg" alt=""></p>
+											<div class="article">
+												<h3 class="tit">이벤트</h3>
+												<p class="txt">풀프레임 미러리스의 <br> 혁명 EOS R5</p>
+												<p class="date">2020.03.13 – 2020.04.30</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="event_view.html">									
+											<p class="img"><img src="/images/event/ev_bn3.jpg" alt=""></p>
+											<div class="article">
+												<h3 class="tit">기획전</h3>
+												<p class="txt">R로 기변하기 좋은 달</p>
+												<p class="date">2020.03.12 – 2020.04.23</p>
+											</div>
+										</a>										
+									</li>
+									<li>
+										<a href="event_view.html">
+											<p class="img"><img src="/images/event/ev_bn4.jpg" alt=""></p>
+											<div class="article">
+												<h3 class="tit">이벤트</h3>
+												<p class="txt">17년 연속 1위 – 캐논 <br> EOS R 시스템 구매 찬스</p>
+												<p class="date">2020.03.12 – 2020.04.23</p>
+											</div>
+										</a>										
+									</li>
+									<li>
+										<a href="event_view.html">
+											<p class="img"><img src="/images/event/ev_bn5.jpg" alt=""></p>
+											<div class="article">
+												<h3 class="tit">이벤트</h3>
+												<p class="txt">새로워진 캐논플렉스로 <br> 여러분을 초대합니다!</p>
+												<p class="date">2020.01.29 – 2020.03.31</p>
+											</div>
+										</a>										
+									</li>
+									<li>
+										<a href="event_view.html">
+											<p class="img"><img src="/images/event/ev_bn5.jpg" alt=""></p>
+											<div class="article">
+												<h3 class="tit">이벤트</h3>
+												<p class="txt">화이트데이 특별 <br> 기획전 0 M 100(Pink)</p>
+												<p class="date">2020.01.29 – 2020.03.31</p>
+											</div>
+										</a>										
+									</li>
+								</ul>
+								<div class="view_more event_more">
+									VIEW MORE
+								</div>
+							</div>
+							<!-- 게시물 없음 -->
+							<!-- <div class="warring">
+								<p><img src="/images/icon/icon_warring.png" alt=""></p>
+								<p>게시물이 없습니다.</p>
+							</div>	 -->
+						</div>						
+					</div>
+				</div>
+			</div>
+			<footer class="footer"></footer>
+		</div>
+		<script src="/dist/js/sub.js"></script>
+		<script src="/dist/js/common.js"></script>
+		<script src="/dist/js/notice.js"></script>
+	</body>
+</html>
